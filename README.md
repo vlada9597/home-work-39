@@ -1,12 +1,62 @@
-# React + Vite
+# React Components Example (home-work-39)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проєкт демонструє різні підходи до створення компонентів у React:
 
-Currently, two official plugins are available:
+- **StatefulComponent** – функціональний компонент із `useState`.
+- **StatelessComponent** – функціональний компонент, який приймає тільки пропси.
+- **ClassComponent** – класовий компонент з локальним станом.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-----
 
-## Expanding the ESLint configuration
+## 🚀 Запуск проєкту
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Клонувати репозиторій:
+  
+Terminal: git clone https://github.com/vlada9597/home-work-39.git
+
+- Встановити залежності:
+
+Terminal: npm install
+
+- Зібрати проєкт у папці dist:
+
+Terminal: npm run build
+
+- Запустити у режимі розробки:
+
+Terminal: npm run dev
+
+Відкрити у браузері: http://localhost:5173
+
+-------
+
+📊 Порівняння підходів: 
+
+Функціональні компоненти (хуки):
+Простішi у розробці.
+Легко читати завдяки хукам (useState, useEffect).
+Сучасний стандарт React.
+Класові компоненти:
+Використовуються рідше.
+Мають життєвий цикл (componentDidMount, componentDidUpdate, componentWillUnmount).
+Код більш "важкий" у порівнянні з хуками.
+
+-----
+
+🔗 Demo : https://home-work-39.netlify.app/
+
+-------
+
+📂 Структура
+home-work-39/ 
+├── src/
+│   ├── components/
+│   │   ├── StatefulComponent.jsx
+│   │   ├── StatelessComponent.jsx
+│   │   └── ClassComponent.jsx 
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── package.json
+└── README.md
